@@ -1,0 +1,12 @@
+= Statistics
+
+Basic statistics including mean, median, weighted moving average and rate of change.
+
+To calculate the weighted moving average of a numeric sequence.....
+
+[95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.as_percent(2) 
+=> "8.75%"
+
+
+
+
