@@ -12,29 +12,28 @@ None
 
 == USAGE
 
-require 'simple_statistics'
+  require 'simple_statistics'
 
 To calculate mean, median, and weighted moving average:
 
-[10,20,30,20,25,24,23,22].mean
-# 21.75
+  [10,20,30,20,25,24,23,22].mean
+  # 21.75
 
-[10,20,30,20,25,24,23,22].median
-# 22.5
-end
+  [10,20,30,20,25,24,23,22].median
+  # 22.5
 
-[10,20,30,20,25,24,23,22].wma
-# 23
+  [10,20,30,20,25,24,23,22].wma
+  # 23
 
 To calculate the weighted moving average growth of a numeric sequence.....
 
-[95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.round_to(4)
-# 1.0875
+  [95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.round_to(4)
+  # 1.0875
 
 ..to express this as a percent we can write:
 
-[95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.as_percent(3) 
-# 8.75%
+  [95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.as_percent(3) 
+  # 8.75%
 
 
 == LICENSE:
