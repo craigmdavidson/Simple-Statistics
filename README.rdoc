@@ -2,12 +2,64 @@
 
 Basic statistics including mean, median, weighted moving average and rate of change.
 
-To calculate the weighted moving average of a numeric sequence.....
+== INSTALL
 
-[95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.as_percent(2) 
+  gem install simple_statistics
 
-"8.75%"
+== DEPENDENCIES
+
+None
+
+== USAGE
+
+require 'simple_statistics'
+
+To calculate mean, median, and weighted moving average:
+
+[10,20,30,20,25,24,23,22].mean
+# 21.75
+
+[10,20,30,20,25,24,23,22].median
+# 22.5
+end
+
+[10,20,30,20,25,24,23,22].wma
+# 23
+
+To calculate the weighted moving average growth of a numeric sequence.....
+
+[95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.round_to(4)
+# 1.0875
+
+..to express this as a percent we can write:
+
+[95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.as_percent(3) 
+# 8.75%
 
 
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2010 Craig Davidson <craig@craigdavidson.co.uk>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 

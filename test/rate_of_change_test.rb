@@ -4,6 +4,22 @@ require 'test/unit'
 
 class RateOfChangeTest < Test::Unit::TestCase
   
+  def test_xxx
+    puts [95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.round_to 4
+  end
+  
+  def test_mean
+    assert_equal 21.75, [10,20,30,20,25,24,23,22].mean
+  end
+  
+  def test_median
+    assert_equal 22.5, [10,20,30,20,25,24,23,22].median
+  end
+  
+  def test_weighted_moving_average
+    assert_equal 23, [10,20,30,20,25,24,23,22].wma
+  end
+  
   def test_multiplier
     assert_equal 2.0, [].multiplier(2.0, 1.0)
     assert_equal 1.0, [].multiplier(1.0, 1.0)
