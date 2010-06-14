@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../lib/rounding.rb'
+require File.dirname(__FILE__) + '/../lib/simple_statistics.rb'
 require 'test/unit'
 
 

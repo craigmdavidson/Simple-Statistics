@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../lib/array_of.rb'
+require File.dirname(__FILE__) + '/../lib/simple_statistics.rb'
 require 'test/unit'
 
 class Hash

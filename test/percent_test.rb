@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../lib/percent.rb'
+require File.dirname(__FILE__) + '/../lib/simple_statistics.rb'
 require 'test/unit'
 
 class PercentTest < Test::Unit::TestCase

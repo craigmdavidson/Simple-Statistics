@@ -1,12 +1,7 @@
-require File.dirname(__FILE__) + '/../lib/rate_of_change.rb'
-require File.dirname(__FILE__) + '/../lib/average.rb'
+require File.dirname(__FILE__) + '/../lib/simple_statistics.rb'
 require 'test/unit'
 
 class RateOfChangeTest < Test::Unit::TestCase
-  
-  def test_xxx
-    puts [95.5, 95.5, 99.1, 104.7, 121.2].growth.wma.round_to 4
-  end
   
   def test_mean
     assert_equal 21.75, [10,20,30,20,25,24,23,22].mean
