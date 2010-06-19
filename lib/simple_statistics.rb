@@ -7,7 +7,7 @@ end
 
 class Array
   def mean
-    self.inject(0) { |sum, x| sum += x } / self.size.to_f      
+    self.inject(0) { |sum, x| sum += x } / (self.size.to_f)
   end
   def median already_sorted=false
     return nil if self.empty?
@@ -38,7 +38,8 @@ class Array
     self
   end
   def multiplier(this, previous)
-    previous != nil && previous != 0 ? (this.to_f/previous.to_f) : 1.0
+    return 1.0 if previous == nil || previous.to_f == 0.0
+    1 + ((this.to_f - previous.to_f)/previous.to_f.abs)
   end
 end
 
